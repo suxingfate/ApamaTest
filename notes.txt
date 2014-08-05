@@ -1,0 +1,31 @@
+This project is for testing interaction with a remote Progress Apama correlator.
+
+The project contains 4 test classes. In order of complexity:
+- 1. BasicTest
+- 2. SendAndReceiveEvents
+- 3. InjectEpl
+- 4. InjectJavaApplication
+
+Since Progress Apama is not open-source software, its jar files are not
+available for download from any Maven repository, and their transitive
+dependencies are not declared anywhere.
+
+So, Apama dependencies are copied from UPG 12B, and then a local repository is
+created to hold them; and since their transitive dependencies are unknown, a
+trial and error approach is used: when a java.lang.ClassNotFoundException error
+appears at execution time, then it means that a new transitive dependency has
+been identified, and the related dependency's POM file must be updated
+accordingly.
+
+The aformentioned method for identifying transitive dependencies does not
+guarantee that all of them will be identified. Therefore, a safer method should
+be used, such as analyzing the jar files' bytecode using some 3pt tool. For the
+time being, it is left as it is.
+
+The remote correlator may have been started from Apama Studio 5.0, or manually.
+
+For starting a correlator manually:
+cd <apama_instl_folder>\bin
+.\apama_env.bat
+.\correlator -l <path_to_license.txt> -j
+ 

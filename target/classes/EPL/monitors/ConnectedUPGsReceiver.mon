@@ -1,0 +1,31 @@
+//*****************************************************************************
+// Title:         ConnectedUPGsReceiver
+// Description:   ConnectedUPGsReceiver description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using com.ericsson.cep.ConnectedUPGs;
+
+monitor ConnectedUPGsReceiver {
+	
+	action onload {
+		//print "Initializing ConnectedUPGsReceiver...";
+		log ("Initializing ConnectedUPGsReceiver...") at INFO;
+	
+		ConnectedUPGs connectedUPGs;
+	
+		on all ConnectedUPGs(): connectedUPGs {
+			//print "ConnectedUPGs received: " + connectedUPGs.toString();
+			log ("ConnectedUPGs received: " + connectedUPGs.toString()) at INFO;
+			emit connectedUPGs to "pers.danisan00.apama.channels.ConnectedUPGsChannel";
+		}
+		
+		//print "ConnectedUPGsReceiver initialized.";
+		log ("ConnectedUPGsReceiver initialized.") at INFO;
+	}
+	
+}

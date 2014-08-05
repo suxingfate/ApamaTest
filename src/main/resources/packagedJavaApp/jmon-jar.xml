@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jmon-jar PUBLIC "-//Apama, Inc.//DTD Java Monitors 1.0//EN" "http://www.apama.com/dtd/jmon-jar_1_0.dtd">
+<jmon-jar>
+	<name>pers.danisan00.apama.applications.EventDefinitionsAndMonitors</name>
+	<version>1.0</version>
+	<author></author>
+	<company></company>
+	<description></description>
+	<application-classes>
+		<event>
+			<event-name>pers.danisan00.apama.eventdefinitions.Alert</event-name>
+			<event-class>pers.danisan00.apama.eventdefinitions.Alert</event-class>
+			<description></description>
+		</event>
+		<event>
+			<event-name>pers.danisan00.apama.eventdefinitions.NewSensor</event-name>
+			<event-class>pers.danisan00.apama.eventdefinitions.NewSensor</event-class>
+			<description></description>
+		</event>
+		<event>
+			<event-name>pers.danisan00.apama.eventdefinitions.Pressure</event-name>
+			<event-class>pers.danisan00.apama.eventdefinitions.Pressure</event-class>
+			<description></description>
+		</event>
+		<event>
+			<event-name>pers.danisan00.apama.eventdefinitions.Temperature</event-name>
+			<event-class>pers.danisan00.apama.eventdefinitions.Temperature</event-class>
+			<description></description>
+		</event>
+		<monitor>
+			<monitor-name>pers.danisan00.apama.monitors.AlertManager</monitor-name>
+			<monitor-class>pers.danisan00.apama.monitors.AlertManager</monitor-class>
+			<description></description>
+		</monitor>
+		<monitor>
+			<monitor-name>pers.danisan00.apama.monitors.SensorMonitor</monitor-name>
+			<monitor-class>pers.danisan00.apama.monitors.SensorMonitor</monitor-class>
+			<description></description>
+		</monitor>
+	</application-classes>
+</jmon-jar>

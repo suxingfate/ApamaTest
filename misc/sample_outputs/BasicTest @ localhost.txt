@@ -1,0 +1,37 @@
+Connecting to remote correlator...
+Connected.
+
+Remote correlator info dump (start)
+* Number of contexts: 1
+    Context 1 of 1: main
+* Number of Java applications: 0
+* Number of monitors: 0
+* Number of event types: 0
+* Number of timers: 0
+* Number of aggregate functions: 0
+Remote correlator info dump (end)
+
+
+Remote correlator status dump (start)
+* Uptime(ms):                  40109
+* Number of contexts:          1
+* Number of monitors:          0
+* Number of sub-monitors:      0
+* Number of java applications: 0
+* Number of listeners:         0
+* Number of sub-listeners:     0
+* Number of event types:       0
+* Events on input queue:       0
+* Events received:             0
+* Events processed:            0
+* Events on internal queue:    0
+* Events routed internally:    0
+* Number of consumers:         0
+* Events on output queue:      0
+* Output events created:       0
+* Output events sent:          0
+Remote correlator status dump (end)
+
+Disconnecting...
+Disconnected.
+Done.

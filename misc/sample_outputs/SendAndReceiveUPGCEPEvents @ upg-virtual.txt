@@ -1,0 +1,38 @@
+Connecting to remote correlator...
+Connected.
+Injecting EPL file monitors/ConnectedUPGsReceiver.mon...
+EPL file injected.
+Attaching output event listener...
+Output event listener attached.
+Sending event...
+Event sent: com.ericsson.cep.RequestConnectedUPGs() of type com.ericsson.cep.RequestConnectedUPGs[].
+Waiting for 3 seconds...
+Output event received: com.ericsson.cep.ConnectedUPGs({"192.168.30.110:1369125320638":0}) of type com.ericsson.cep.ConnectedUPGs[UPGs].
+Connected UPGs: {192.168.30.110:1369125320638=0}
+Wait time is over.
+Detaching output event listener...
+Output event listener detached.
+Deleting monitor pers.danisan00.apama.monitors.ConnectedUPGsReceiver...
+Monitor deleted.
+Disconnecting...
+Disconnected.
+Done.
+
+--------------------------------------------------------------------------------
+
+Correlator log:
+
+2013-05-21 17:10:27.460 INFO  [139746859980544] - Sender Apama43Tests_SendAndReceiveUPGCEPEvents (0x10e6050) (component ID 4060588865437171697/4060588865437171697) connected from 159.107.25.241:55479
+2013-05-21 17:10:27.496 INFO  [139746855773952] - Added monitor pers.danisan00.apama.monitors.ConnectedUPGsReceiver
+2013-05-21 17:10:27.496 INFO  [139746855773952] - Injected MonitorScript from file <unknown>, size 765 bytes, compile time 0.00 seconds
+2013-05-21 17:10:27.540 INFO  [139746896946944] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) (component ID 4060588865437171697/4060588865437171697) connected from 159.107.25.241:55479
+2013-05-21 17:10:27.540 INFO  [139746896946944] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) initially subscribed to <no channels>
+2013-05-21 17:10:27.540 INFO  [139746896946944] - Blocking receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) will be blocked after 10.000000 seconds or 10240 kb if slow
+2013-05-21 17:10:27.542 INFO  [139746904315648] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) unsubscribed from all channels
+2013-05-21 17:10:27.546 INFO  [139746905368320] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) added subscriptions to [pers.danisan00.apama.channels.ConnectedUPGsChannel]
+2013-05-21 17:10:27.571 CRIT  [139746924250880] - com.ericsson.cep.SessionManager [2] responding to RequestConnectedUPGs com.ericsson.cep.ConnectedUPGs({"192.168.30.110:1369125320638":0})
+2013-05-21 17:10:27.571 INFO  [139746924250880] - com.ericsson.cep.OutboundMonitor [3] OutboundMonitor, received connectedUPGs event: com.ericsson.cep.ConnectedUPGs({"192.168.30.110:1369125320638":0})
+2013-05-21 17:10:30.579 INFO  [139746901157632] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) removed subscriptions to [pers.danisan00.apama.channels.ConnectedUPGsChannel]
+2013-05-21 17:10:30.582 INFO  [139746906420992] - Receiver Apama43Tests_SendAndReceiveUPGCEPEvents (0x10a7e60) (component ID 4060588865437171697/4060588865437171697) disconnected cleanly: Other party requested disconnection
+2013-05-21 17:10:30.586 INFO  [139746855773952] - Deleted pers.danisan00.apama.monitors.ConnectedUPGsReceiver
+2013-05-21 17:10:30.589 INFO  [139746902210304] - Sender Apama43Tests_SendAndReceiveUPGCEPEvents (0x10e6050) (component ID 4060588865437171697/4060588865437171697) disconnected cleanly: Other party requested disconnection

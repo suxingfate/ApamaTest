@@ -1,0 +1,62 @@
+//*****************************************************************************
+// Title:         SensorMonitor
+// Description:   SensorMonitor description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using pers.danisan00.apama.eventdefinitions.NewSensor;
+using pers.danisan00.apama.eventdefinitions.Temperature;
+using pers.danisan00.apama.eventdefinitions.Pressure;
+using pers.danisan00.apama.eventdefinitions.Alert;
+
+monitor SensorMonitor {
+	
+	integer count;
+	
+	action onload {
+		print "Initializing SensorMonitor...";
+		count := 0;
+		NewSensor sensor;
+		
+		on all NewSensor(): sensor {
+			spawn monitorSensor(sensor);
+		}
+		
+		//on all NewSensor(): sensor {
+			//on all Temperature(sensorId = sensor.sensorId, temperature == sensor.meanTemperature)
+			//print "Temperature high: " + temperature.toString();
+			//route Alert("Temperature high", sensor.sensorId, temperature.temperature, 0.0);
+		//}
+		
+		print "SensorMonitor initialized.";
+	}
+
+	action monitorSensor(NewSensor sensor) {
+		Temperature temperature;
+	
+		//Pressure pressure;
+		
+		//on all Temperature(sensorId = sensor.sensorId, temperature >= sensor.meanTemperature * 1.10): temperature {
+			//print "Temperature high: " + temperature.toString();
+			//route Alert("Temperature high", sensor.sensorId, temperature.temperature, 0.0);
+		//}
+		
+		//integer count := 0;
+		
+		//on all Temperature(sensorId = sensor.sensorId, temperature = sensor.meanTemperature): temperature {
+		on all Temperature(sensorId = sensor.sensorId): temperature {
+		    //count := count + 1;
+			//print "Temperature high: " + count.toString();
+			//route Alert("Temperature high", sensor.sensorId, temperature.temperature, 0.0);
+			//if count%10000 = 0 then {
+			route Alert(count.toString(), sensor.sensorId, temperature.temperature, 0.0);
+			//}
+		}
+
+	}
+	
+}

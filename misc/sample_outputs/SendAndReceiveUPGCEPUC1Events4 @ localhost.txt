@@ -1,0 +1,37 @@
+Connecting to remote correlator...
+Connected.
+Attaching output event listener...
+Output event listener attached.
+Sending event...
+Event sent: com.ericsson.cep.network.NetworkStatus(1,"my_imsi","my_cellId",1.369152594E9) of type com.ericsson.cep.network.NetworkStatus[status, IMSI, cellID, createdAt].
+Sending event...
+Event sent: com.ericsson.cep.network.NetworkStatus(1,"my_imsi_2","my_cellId_2",1.369152594E9) of type com.ericsson.cep.network.NetworkStatus[status, IMSI, cellID, createdAt].
+Sending event...
+Event sent: com.ericsson.cep.network.NetworkStatus(1,"my_imsi_3","my_cellId_3",1.369152594E9) of type com.ericsson.cep.network.NetworkStatus[status, IMSI, cellID, createdAt].
+Waiting for 3 seconds...
+Wait time is over.
+Sending event...
+Event sent: com.ericsson.cep.network.RequestStateSummary("pers.danisan00.apama.channels.StateSummaryChannel",true,true,true,true,true) of type com.ericsson.cep.network.RequestStateSummary[outputChannel, connectedUPGs, networkStatusMonitorConfiguration, monitoredUsersCount, monitoredUsers, twitterSentiment].
+Waiting for 3 seconds...
+Output event received: com.ericsson.cep.network.StateSummary(com.ericsson.cep.ConnectedUPGs({}),com.ericsson.cep.network.NetworkStatusMonitorConfiguration(3600,2,3),{"UC1CTX0":2,"UC1CTX1":1},{"my_imsi":com.ericsson.cep.network.MonitoredUserData(1369152594.2,"UC1CTX0"),"my_imsi_2":com.ericsson.cep.network.MonitoredUserData(1369152594.2,"UC1CTX1"),"my_imsi_3":com.ericsson.cep.network.MonitoredUserData(1369152594.2,"UC1CTX0")},com.ericsson.cep.twitter.TwitterSentiment(0,0,0,0)) of type com.ericsson.cep.network.StateSummary[connectedUPGs, networkStatusMonitorConfiguration, monitoredUsersCount, monitoredUsers, twitterSentiment].
+Current Twitter sentiment: 0
+Wait time is over.
+Detaching output event listener...
+Output event listener detached.
+Disconnecting...
+Disconnected.
+Done.
+
+--------------------------------------------------------------------------------
+
+Correlator log:
+
+2013-05-21 18:09:54.185 INFO  [6544] - Sender Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFB60) (component ID 4045745458425954289/4045745458425954289) connected from 127.0.0.1:56032
+2013-05-21 18:09:54.233 INFO  [6996] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) (component ID 4045745458425954289/4045745458425954289) connected from 127.0.0.1:56032
+2013-05-21 18:09:54.233 INFO  [6996] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) initially subscribed to <no channels>
+2013-05-21 18:09:54.233 INFO  [6996] - Blocking receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) will be blocked after 10.000000 seconds or 10240 kb if slow
+2013-05-21 18:09:54.233 INFO  [7220] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) unsubscribed from all channels
+2013-05-21 18:09:54.233 INFO  [4740] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) added subscriptions to [pers.danisan00.apama.channels.StateSummaryChannel]
+2013-05-21 18:10:00.272 INFO  [6160] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) removed subscriptions to [pers.danisan00.apama.channels.StateSummaryChannel]
+2013-05-21 18:10:00.272 INFO  [7220] - Receiver Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFD88) (component ID 4045745458425954289/4045745458425954289) disconnected cleanly: Other party requested disconnection
+2013-05-21 18:10:00.272 INFO  [4740] - Sender Apama43Tests_SendAndReceiveUPGCEPUC1Events4 (0CCCFB60) (component ID 4045745458425954289/4045745458425954289) disconnected cleanly: Other party requested disconnection

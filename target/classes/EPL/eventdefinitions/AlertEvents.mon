@@ -1,0 +1,16 @@
+//*****************************************************************************
+// Title:         AlertEvents
+// Description:   AlertEvents description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.eventdefinitions;
+
+event Alert {
+	string type;
+	string sensorId;
+	float temperature;
+	float pressure;
+}

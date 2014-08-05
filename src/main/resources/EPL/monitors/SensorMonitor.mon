@@ -1,0 +1,54 @@
+//*****************************************************************************
+// Title:         SensorMonitor
+// Description:   SensorMonitor description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using pers.danisan00.apama.eventdefinitions.NewSensor;
+using pers.danisan00.apama.eventdefinitions.Temperature;
+using pers.danisan00.apama.eventdefinitions.Pressure;
+using pers.danisan00.apama.eventdefinitions.Alert;
+
+monitor SensorMonitor {
+	
+	action onload {
+		print "Initializing SensorMonitor...";
+		
+		NewSensor sensor;
+		
+		on all NewSensor(): sensor {
+			spawn monitorSensor(sensor);
+		}
+		
+		print "SensorMonitor initialized.";
+	}
+
+	action monitorSensor(NewSensor sensor) {
+		Temperature temperature;
+	
+		Pressure pressure;
+		
+		on all Temperature(sensorId = sensor.sensorId, temperature >= sensor.meanTemperature * 1.10): temperature {
+			print "Temperature high: " + temperature.toString();
+			route Alert("Temperature high", sensor.sensorId, temperature.temperature, 0.0);
+		}
+		
+		on all Pressure(sensorId = sensor.sensorId, pressure >= sensor.meanPressure * 1.10): pressure {
+			print "Pressure high: " + pressure.toString();
+			route Alert("Pressure high", sensor.sensorId, 0.0, pressure.pressure);
+		}
+		
+		on all Temperature(sensorId = sensor.sensorId, temperature >= sensor.meanTemperature * 1.10): temperature
+		->
+		Pressure(sensorId = sensor.sensorId, pressure >= sensor.meanPressure * 1.10): pressure
+		within (3.0) {
+			print "Temperature and pressure rise: " + temperature.toString() + ", " + pressure.toString();
+			route Alert("Temperature and pressure rise", sensor.sensorId, temperature.temperature, pressure.pressure);
+		}
+	}
+	
+}

@@ -1,0 +1,35 @@
+//*****************************************************************************
+// Title:         RequestOutboundContextReceiver
+// Description:   RequestOutboundContextReceiver description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using com.ericsson.cep.RequestOutboundContext;
+using com.ericsson.cep.OutboundContextResponse;
+
+monitor RequestOutboundContextReceiver {
+	
+	context outboundCtx;
+	
+	action onload {
+		print "Initializing RequestOutboundContextReceiver...";
+	
+		outboundCtx := context("pers.danisan00.apama.contexts.OutboundContext", true);
+	
+		RequestOutboundContext requestOutboundContext;
+	
+		on all RequestOutboundContext(): requestOutboundContext {
+			print "RequestOutboundContext received: " + requestOutboundContext.toString();
+			OutboundContextResponse outboundContextResponse := new com.ericsson.cep.OutboundContextResponse;
+			outboundContextResponse.ctx := outboundCtx;
+            route outboundContextResponse;
+		}
+		
+		print "RequestOutboundContextReceiver initialized.";
+	}
+	
+}

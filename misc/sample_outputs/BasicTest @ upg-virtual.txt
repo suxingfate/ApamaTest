@@ -1,0 +1,52 @@
+Connecting to remote correlator...
+Connected.
+
+Remote correlator info dump (start)
+* Number of contexts: 2
+    Context 1 of 2: Outbound
+    Context 2 of 2: main
+* Number of Java applications: 0
+* Number of monitors: 2
+    Monitor 1 of 2: com.ericsson.cep.OutboundMonitor
+    Monitor 2 of 2: com.ericsson.cep.SessionManager
+* Number of event types: 11
+    Event type 1 of 11: com.ericsson.cep.ConnectedUPGs
+    Event type 2 of 11: com.ericsson.cep.DisconnectChannel
+    Event type 3 of 11: com.ericsson.cep.HeartbeatRequest
+    Event type 4 of 11: com.ericsson.cep.HeartbeatResponse
+    Event type 5 of 11: com.ericsson.cep.Notification
+    Event type 6 of 11: com.ericsson.cep.OutboundContextResponse
+    Event type 7 of 11: com.ericsson.cep.OutboundMonitorCreated
+    Event type 8 of 11: com.ericsson.cep.RequestConnectedUPGs
+    Event type 9 of 11: com.ericsson.cep.RequestOutboundContext
+    Event type 10 of 11: com.ericsson.cep.SetHeartbeatTimeout
+    Event type 11 of 11: com.ericsson.cep.SpawnOutboundMonitor
+* Number of timers: 1
+    Timer 1 of 1: wait
+* Number of aggregate functions: 0
+Remote correlator info dump (end)
+
+
+Remote correlator status dump (start)
+* Uptime(ms):                  1771839
+* Number of contexts:          2
+* Number of monitors:          2
+* Number of sub-monitors:      2
+* Number of java applications: 0
+* Number of listeners:         8
+* Number of sub-listeners:     8
+* Number of event types:       11
+* Events on input queue:       0
+* Events received:             259
+* Events processed:            525
+* Events on internal queue:    0
+* Events routed internally:    1
+* Number of consumers:         1
+* Events on output queue:      0
+* Output events created:       259
+* Output events sent:          259
+Remote correlator status dump (end)
+
+Disconnecting...
+Disconnected.
+Done.

@@ -1,0 +1,25 @@
+//*****************************************************************************
+// Title:         SensorMonitorEvents
+// Description:   SensorMonitorEvents description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.eventdefinitions;
+
+event Temperature {
+	string sensorId;
+	float temperature;
+}
+
+event Pressure {
+	string sensorId;
+	float pressure;
+}
+
+event NewSensor {
+	string sensorId;
+	float meanTemperature;
+	float meanPressure;
+}

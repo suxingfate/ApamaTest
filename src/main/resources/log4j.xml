@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appenders (start) -->
+
+	<appender name="MainAppender" class="org.apache.log4j.RollingFileAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler"/>
+		<param name="File" value="logs/Apama43Tests.log"/>
+		<param name="Append" value="true"/>
+		<param name="MaxFileSize" value="1000KB"/>
+		<param name="MaxBackupIndex" value="10"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} [%t] %5p [%c] %m%n"/>
+		</layout>
+	</appender>
+	
+	<appender name="TestAppender" class="org.apache.log4j.ConsoleAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler"/>
+		<param name="Target" value="System.out"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} [%t] %5p [%c] %m%n"/>
+		</layout>
+	</appender>
+
+	<!-- Appenders (end) -->
+	
+	<!-- Loggers (start) -->
+
+	<logger name="pers.danisan00">
+		<level value="DEBUG"/>
+	</logger>
+
+	<!-- Loggers (end) -->
+
+	<!-- Root category (start) -->
+
+	<root>
+		<priority value="WARN"/>
+		<appender-ref ref="MainAppender"/>
+		<!-- <appender-ref ref="TestAppender"/> -->
+	</root>
+
+	<!-- Root category (end) -->
+
+</log4j:configuration>

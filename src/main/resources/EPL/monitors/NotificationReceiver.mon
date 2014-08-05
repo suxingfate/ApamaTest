@@ -1,0 +1,28 @@
+//*****************************************************************************
+// Title:         NotificationReceiver
+// Description:   NotificationReceiver description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using com.ericsson.cep.Notification;
+
+monitor NotificationReceiver {
+	
+	action onload {
+		print "Initializing NotificationReceiver...";
+	
+		Notification notification;
+	
+		on all Notification(): notification {
+			print "Notification received: " + notification.toString();
+			emit notification to "pers.danisan00.apama.channels.NotificationChannel";
+		}
+		
+		print "NotificationReceiver initialized.";
+	}
+	
+}

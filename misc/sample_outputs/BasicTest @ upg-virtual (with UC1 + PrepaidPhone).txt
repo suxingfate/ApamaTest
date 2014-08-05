@@ -1,0 +1,113 @@
+Connecting to remote correlator...
+Connected.
+
+Remote correlator info dump (start)
+* Number of contexts: 2
+    Context 1 of 2: Outbound
+    Context 2 of 2: main
+* Number of Java applications: 0
+* Number of monitors: 9
+    Monitor 1 of 9: com.ericsson.cep.network.NewNetworkStatusMonitor
+    Monitor 2 of 9: com.ericsson.cep.network.TowerErrorMonitor
+    Monitor 3 of 9: com.ericsson.cep.prepaidphone.MainMonitor
+    Monitor 4 of 9: com.ericsson.cep.twitter.CategorizedTweets
+    Monitor 5 of 9: com.ericsson.cep.twitter.LocationTwitterMonitor
+    Monitor 6 of 9: com.ericsson.cep.twitter.NoLocTwitterMonitor
+    Monitor 7 of 9: com.ericsson.cep.twitter.TwitterMonitor
+    Monitor 8 of 9: com.ericsson.cep.OutboundMonitor
+    Monitor 9 of 9: com.ericsson.cep.SessionManager
+* Number of event types: 65
+    Event type 1 of 65: com.ericsson.cep.network.CellMonData
+    Event type 2 of 65: com.ericsson.cep.network.CreateNewIMSINetworkFaultMonitor
+    Event type 3 of 65: com.ericsson.cep.network.CreateNewTowerErrorMonitor
+    Event type 4 of 65: com.ericsson.cep.network.ExtendTime
+    Event type 5 of 65: com.ericsson.cep.network.MonitoredUserData
+    Event type 6 of 65: com.ericsson.cep.network.NetStatusCreated
+    Event type 7 of 65: com.ericsson.cep.network.NetworkStatus
+    Event type 8 of 65: com.ericsson.cep.network.NetworkStatusMonitorConfiguration
+    Event type 9 of 65: com.ericsson.cep.network.NewNetworkStatusMonitorConfiguration
+    Event type 10 of 65: com.ericsson.cep.network.RequestStateSummary
+    Event type 11 of 65: com.ericsson.cep.network.SpawnNetStatusMonitor
+    Event type 12 of 65: com.ericsson.cep.network.StateSummary
+    Event type 13 of 65: com.ericsson.cep.network.StopMonitoring
+    Event type 14 of 65: com.ericsson.cep.network.StopTowerMonitor
+    Event type 15 of 65: com.ericsson.cep.prepaidphone.Alert
+    Event type 16 of 65: com.ericsson.cep.prepaidphone.AvgCheck
+    Event type 17 of 65: com.ericsson.cep.prepaidphone.CallPlaced
+    Event type 18 of 65: com.ericsson.cep.prepaidphone.ConfigChange
+    Event type 19 of 65: com.ericsson.cep.prepaidphone.ConfigDelta
+    Event type 20 of 65: com.ericsson.cep.prepaidphone.Configuration
+    Event type 21 of 65: com.ericsson.cep.prepaidphone.ConfigurationUpdated
+    Event type 22 of 65: com.ericsson.cep.prepaidphone.CreditUpdated
+    Event type 23 of 65: com.ericsson.cep.prepaidphone.CustomerInfo
+    Event type 24 of 65: com.ericsson.cep.prepaidphone.DataConsumed
+    Event type 25 of 65: com.ericsson.cep.prepaidphone.EnteredArea
+    Event type 26 of 65: com.ericsson.cep.prepaidphone.ImeiUpdated
+    Event type 27 of 65: com.ericsson.cep.prepaidphone.LeftArea
+    Event type 28 of 65: com.ericsson.cep.prepaidphone.MsisdnInfo
+    Event type 29 of 65: com.ericsson.cep.prepaidphone.NewCustomer
+    Event type 30 of 65: com.ericsson.cep.prepaidphone.NewCustomerAdded
+    Event type 31 of 65: com.ericsson.cep.prepaidphone.RefillPrepaid
+    Event type 32 of 65: com.ericsson.cep.prepaidphone.SmallRefillData
+    Event type 33 of 65: com.ericsson.cep.prepaidphone.SpendWindow
+    Event type 34 of 65: com.ericsson.cep.prepaidphone.SwappedAreas
+    Event type 35 of 65: com.ericsson.cep.prepaidphone.SwitchHandset
+    Event type 36 of 65: com.ericsson.cep.prepaidphone.UpdateCustomerImei
+    Event type 37 of 65: com.ericsson.cep.twitter.CategorisedTweet
+    Event type 38 of 65: com.ericsson.cep.twitter.CategoryContextCreated
+    Event type 39 of 65: com.ericsson.cep.twitter.Keywords
+    Event type 40 of 65: com.ericsson.cep.twitter.LocationCreated
+    Event type 41 of 65: com.ericsson.cep.twitter.LocationTweet
+    Event type 42 of 65: com.ericsson.cep.twitter.NewKeywords
+    Event type 43 of 65: com.ericsson.cep.twitter.NoLocCreated
+    Event type 44 of 65: com.ericsson.cep.twitter.NoLocationTweet
+    Event type 45 of 65: com.ericsson.cep.twitter.RequestTwitterSentiment
+    Event type 46 of 65: com.ericsson.cep.twitter.SpawnCategoryTwitterMonitor
+    Event type 47 of 65: com.ericsson.cep.twitter.SpawnLocationTwitterMonitor
+    Event type 48 of 65: com.ericsson.cep.twitter.SpawnNoLocTwitterMonitor
+    Event type 49 of 65: com.ericsson.cep.twitter.Tweet
+    Event type 50 of 65: com.ericsson.cep.twitter.TwitterLoc
+    Event type 51 of 65: com.ericsson.cep.twitter.TwitterMonitorConfiguration
+    Event type 52 of 65: com.ericsson.cep.twitter.TwitterPrct
+    Event type 53 of 65: com.ericsson.cep.twitter.TwitterPure
+    Event type 54 of 65: com.ericsson.cep.twitter.TwitterSentiment
+    Event type 55 of 65: com.ericsson.cep.ConnectedUPGs
+    Event type 56 of 65: com.ericsson.cep.DisconnectChannel
+    Event type 57 of 65: com.ericsson.cep.HeartbeatRequest
+    Event type 58 of 65: com.ericsson.cep.HeartbeatResponse
+    Event type 59 of 65: com.ericsson.cep.Notification
+    Event type 60 of 65: com.ericsson.cep.OutboundContextResponse
+    Event type 61 of 65: com.ericsson.cep.OutboundMonitorCreated
+    Event type 62 of 65: com.ericsson.cep.RequestConnectedUPGs
+    Event type 63 of 65: com.ericsson.cep.RequestOutboundContext
+    Event type 64 of 65: com.ericsson.cep.SetHeartbeatTimeout
+    Event type 65 of 65: com.ericsson.cep.SpawnOutboundMonitor
+* Number of timers: 1
+    Timer 1 of 1: wait
+* Number of aggregate functions: 0
+Remote correlator info dump (end)
+
+
+Remote correlator status dump (start)
+* Uptime(ms):                  1970769797
+* Number of contexts:          2
+* Number of monitors:          9
+* Number of sub-monitors:      9
+* Number of java applications: 0
+* Number of listeners:         35
+* Number of sub-listeners:     35
+* Number of event types:       65
+* Events on input queue:       0
+* Events received:             384476
+* Events processed:            768965
+* Events on internal queue:    0
+* Events routed internally:    13
+* Number of consumers:         2
+* Events on output queue:      0
+* Output events created:       384581
+* Output events sent:          384686
+Remote correlator status dump (end)
+
+Disconnecting...
+Disconnected.
+Done.

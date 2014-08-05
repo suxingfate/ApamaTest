@@ -1,0 +1,260 @@
+Connecting to remote correlator...
+Connected.
+
+Remote correlator info dump (start)
+* Number of contexts: 3
+    Context 1 of 3: main
+    Context 2 of 3: AreaDetectionCTX
+    Context 3 of 3: AnimatorCTX
+* Number of Java applications: 0
+* Number of monitors: 12
+    Monitor 1 of 12: com.apama.adapters.IAFAdapterStatusMonitor
+    Monitor 2 of 12: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1
+    Monitor 3 of 12: com.apama.database.ADBCAdapterService
+    Monitor 4 of 12: com.apama.database.ADBCStatusManager
+    Monitor 5 of 12: com.apama.dataview.DataViewService_Impl_Dict
+    Monitor 6 of 12: com.apama.scenario.RequestInstancesHandler
+    Monitor 7 of 12: com.apama.scenario.ScenarioService
+    Monitor 8 of 12: com.apama.scenarios.ScenarioDeleterSupport
+    Monitor 9 of 12: com.apama.statusreport.ParallelStatusSupport
+    Monitor 10 of 12: com.apamax.ericsson.Animator
+    Monitor 11 of 12: com.apamax.ericsson.DataView
+    Monitor 12 of 12: com.apamax.ericsson.Demo
+* Number of event types: 207
+    Event type 1 of 207: com.apama.adapters.IAFAdapterStatusMonitor.ProcessConnectionsOpened
+    Event type 2 of 207: com.apama.adapters.AdapterConnectionClosed
+    Event type 3 of 207: com.apama.adapters.AdapterConnectionOpened
+    Event type 4 of 207: com.apama.adapters.AdapterError
+    Event type 5 of 207: com.apama.adapters.AdapterStatusDeregister
+    Event type 6 of 207: com.apama.adapters.AdapterStatusRegister
+    Event type 7 of 207: com.apama.adapters.AdapterUp
+    Event type 8 of 207: com.apama.adapters.ConnectionClosed
+    Event type 9 of 207: com.apama.adapters.ConnectionOpened
+    Event type 10 of 207: com.apama.adapters.IAFStatusRequest_1
+    Event type 11 of 207: com.apama.adapters.IAFStatusResponse_1
+    Event type 12 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1._ConfigurationCreated
+    Event type 13 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1._ConfigurationDeleted
+    Event type 14 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1._ConfigurationState
+    Event type 15 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1_com_apamax_ericsson_Alert
+    Event type 16 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1_com_apamax_ericsson_ContentAccessed
+    Event type 17 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1_com_apamax_ericsson_DataConsumed
+    Event type 18 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1_com_apamax_ericsson_DeviceStartup
+    Event type 19 of 207: com.apama.database.persistence.StoreEventData_ADBC_JDBC_instance_1_com_apamax_ericsson_SupplementaryService
+    Event type 20 of 207: com.apama.database.BatchDone
+    Event type 21 of 207: com.apama.database.CloseDatabase
+    Event type 22 of 207: com.apama.database.CloseDatabaseToContext
+    Event type 23 of 207: com.apama.database.Command
+    Event type 24 of 207: com.apama.database.CommandAck
+    Event type 25 of 207: com.apama.database.CommandToContext
+    Event type 26 of 207: com.apama.database.CommitAck
+    Event type 27 of 207: com.apama.database.CommitRequest
+    Event type 28 of 207: com.apama.database.CommitRequestToContext
+    Event type 29 of 207: com.apama.database.Connection
+    Event type 30 of 207: com.apama.database.CreatePreparedQuery
+    Event type 31 of 207: com.apama.database.CreatePreparedQueryToContext
+    Event type 32 of 207: com.apama.database.CreateStoreConfiguration
+    Event type 33 of 207: com.apama.database.CreateStoreConfigurationInContext
+    Event type 34 of 207: com.apama.database.CreateStoreStatement
+    Event type 35 of 207: com.apama.database.CreateStoreStatementToContext
+    Event type 36 of 207: com.apama.database.DBAcknowledge
+    Event type 37 of 207: com.apama.database.DBOperation
+    Event type 38 of 207: com.apama.database.DBReconnectPolicy
+    Event type 39 of 207: com.apama.database.DBUtil
+    Event type 40 of 207: com.apama.database.DataSource
+    Event type 41 of 207: com.apama.database.DataSources
+    Event type 42 of 207: com.apama.database.Database
+    Event type 43 of 207: com.apama.database.DatabaseOperationAck
+    Event type 44 of 207: com.apama.database.Databases
+    Event type 45 of 207: com.apama.database.DeletePreparedQuery
+    Event type 46 of 207: com.apama.database.DeletePreparedQueryToContext
+    Event type 47 of 207: com.apama.database.DeleteStoreConfiguration
+    Event type 48 of 207: com.apama.database.DeleteStoreStatement
+    Event type 49 of 207: com.apama.database.DeleteStoreStatementToContext
+    Event type 50 of 207: com.apama.database.Discovery
+    Event type 51 of 207: com.apama.database.FlowControl
+    Event type 52 of 207: com.apama.database.GetNextBatch
+    Event type 53 of 207: com.apama.database.GetNextBatchToContext
+    Event type 54 of 207: com.apama.database.NamedQueries
+    Event type 55 of 207: com.apama.database.NamedQuery
+    Event type 56 of 207: com.apama.database.OpenDatabase
+    Event type 57 of 207: com.apama.database.OpenDatabaseToContext
+    Event type 58 of 207: com.apama.database.ParameterData
+    Event type 59 of 207: com.apama.database.PauseQuery
+    Event type 60 of 207: com.apama.database.PauseQueryToContext
+    Event type 61 of 207: com.apama.database.PreparedQuery
+    Event type 62 of 207: com.apama.database.PreparedQueryAck
+    Event type 63 of 207: com.apama.database.Query
+    Event type 64 of 207: com.apama.database.QueryDone
+    Event type 65 of 207: com.apama.database.QueryStatus
+    Event type 66 of 207: com.apama.database.RequestDataSources
+    Event type 67 of 207: com.apama.database.RequestDataSourcesToContext
+    Event type 68 of 207: com.apama.database.RequestDatabases
+    Event type 69 of 207: com.apama.database.RequestDatabasesToContext
+    Event type 70 of 207: com.apama.database.RequestNamedQueries
+    Event type 71 of 207: com.apama.database.RequestNamedQueriesToContext
+    Event type 72 of 207: com.apama.database.ResultEvent
+    Event type 73 of 207: com.apama.database.ResultSchema
+    Event type 74 of 207: com.apama.database.RollbackAck
+    Event type 75 of 207: com.apama.database.RollbackRequest
+    Event type 76 of 207: com.apama.database.RollbackRequestToContext
+    Event type 77 of 207: com.apama.database.ServiceMonitorOnline
+    Event type 78 of 207: com.apama.database.ServiceMonitorUnloaded
+    Event type 79 of 207: com.apama.database.StartQuery
+    Event type 80 of 207: com.apama.database.StartQueryToContext
+    Event type 81 of 207: com.apama.database.StartStoreConfiguration
+    Event type 82 of 207: com.apama.database.StopAllQueries
+    Event type 83 of 207: com.apama.database.StopAllQueriesAck
+    Event type 84 of 207: com.apama.database.StopAllQueriesToContext
+    Event type 85 of 207: com.apama.database.StopQuery
+    Event type 86 of 207: com.apama.database.StopQueryToContext
+    Event type 87 of 207: com.apama.database.StopStoreConfiguration
+    Event type 88 of 207: com.apama.database.StoreConfigurationAck
+    Event type 89 of 207: com.apama.database.StoreConfigurationReady
+    Event type 90 of 207: com.apama.database.StoreData
+    Event type 91 of 207: com.apama.database.StoreDataToContext
+    Event type 92 of 207: com.apama.database.StoreEvent
+    Event type 93 of 207: com.apama.database.StoreEventToContext
+    Event type 94 of 207: com.apama.database.StoreOperationAck
+    Event type 95 of 207: com.apama.database.StoreOperationError
+    Event type 96 of 207: com.apama.database.StoreStatementAck
+    Event type 97 of 207: com.apama.database._AdapterStatus
+    Event type 98 of 207: com.apama.dataview.DataViewService_Impl_Dict._Item
+    Event type 99 of 207: com.apama.dataview.DataViewAddDefinition
+    Event type 100 of 207: com.apama.dataview.DataViewAddItem
+    Event type 101 of 207: com.apama.dataview.DataViewAddOrUpdateItem
+    Event type 102 of 207: com.apama.dataview.DataViewAllItemsDeleted
+    Event type 103 of 207: com.apama.dataview.DataViewDefinition
+    Event type 104 of 207: com.apama.dataview.DataViewDefinitionDeleted
+    Event type 105 of 207: com.apama.dataview.DataViewDeleteAllItems
+    Event type 106 of 207: com.apama.dataview.DataViewDeleteDefinition
+    Event type 107 of 207: com.apama.dataview.DataViewDeleteItem
+    Event type 108 of 207: com.apama.dataview.DataViewException
+    Event type 109 of 207: com.apama.dataview.DataViewFieldLookup
+    Event type 110 of 207: com.apama.dataview.DataViewGetFieldLookup
+    Event type 111 of 207: com.apama.dataview.DataViewItem
+    Event type 112 of 207: com.apama.dataview.DataViewItemDeleted
+    Event type 113 of 207: com.apama.dataview.DataViewItemException
+    Event type 114 of 207: com.apama.dataview.DataViewServiceUnloaded
+    Event type 115 of 207: com.apama.dataview.DataViewUpdateItem
+    Event type 116 of 207: com.apama.dataview.DataViewUpdateItemDelta
+    Event type 117 of 207: com.apama.dataview.SetLogLevel
+    Event type 118 of 207: com.apama.scenario.ScenarioService.PendingOperation
+    Event type 119 of 207: com.apama.scenario.Acknowledge
+    Event type 120 of 207: com.apama.scenario.AllConfiguration
+    Event type 121 of 207: com.apama.scenario.CallbackHelper
+    Event type 122 of 207: com.apama.scenario.Configuration
+    Event type 123 of 207: com.apama.scenario.ConfigureUpdates
+    Event type 124 of 207: com.apama.scenario.Create
+    Event type 125 of 207: com.apama.scenario.Created
+    Event type 126 of 207: com.apama.scenario.Delete
+    Event type 127 of 207: com.apama.scenario.Deleted
+    Event type 128 of 207: com.apama.scenario.Edit
+    Event type 129 of 207: com.apama.scenario.Edited
+    Event type 130 of 207: com.apama.scenario.FinishedScenarioRecovery
+    Event type 131 of 207: com.apama.scenario.GetAllConfiguration
+    Event type 132 of 207: com.apama.scenario.GetConfiguration
+    Event type 133 of 207: com.apama.scenario.Instance
+    Event type 134 of 207: com.apama.scenario.InstanceDied
+    Event type 135 of 207: com.apama.scenario.OperationCompleted
+    Event type 136 of 207: com.apama.scenario.ParallelStarting
+    Event type 137 of 207: com.apama.scenario.ParentChildRelationship
+    Event type 138 of 207: com.apama.scenario.RequestInstancesDone
+    Event type 139 of 207: com.apama.scenario.RequestInstancesInternal
+    Event type 140 of 207: com.apama.scenario.RequestInstancesOnChannel
+    Event type 141 of 207: com.apama.scenario.RequestInstancesOnChannelByUser
+    Event type 142 of 207: com.apama.scenario.RequestInstancesParallel
+    Event type 143 of 207: com.apama.scenario.RequestInstancesParallelDone
+    Event type 144 of 207: com.apama.scenario.RequestScenarios
+    Event type 145 of 207: com.apama.scenario.RequestScenariosAck
+    Event type 146 of 207: com.apama.scenario.RequestScenariosDone
+    Event type 147 of 207: com.apama.scenario.Scenario
+    Event type 148 of 207: com.apama.scenario.ScenarioFinished
+    Event type 149 of 207: com.apama.scenario.ScenarioProcessedUpdates
+    Event type 150 of 207: com.apama.scenario.ScenarioServiceLibrary
+    Event type 151 of 207: com.apama.scenario.ScenarioServiceLoaded
+    Event type 152 of 207: com.apama.scenario.ScenarioServiceUnloaded
+    Event type 153 of 207: com.apama.scenario.ScenarioServiceUpdaterBase
+    Event type 154 of 207: com.apama.scenario.ScenarioServiceUpdaterMultipleInstances
+    Event type 155 of 207: com.apama.scenario.ScenarioServiceUpdaterSingleInstance
+    Event type 156 of 207: com.apama.scenario.ScenarioUnloaded
+    Event type 157 of 207: com.apama.scenario.SendQueuedUpdatesNow
+    Event type 158 of 207: com.apama.scenario.SetThrottlingPeriod
+    Event type 159 of 207: com.apama.scenario.StartScenarioRecovery
+    Event type 160 of 207: com.apama.scenario.StateChange
+    Event type 161 of 207: com.apama.scenario.Update
+    Event type 162 of 207: com.apama.scenarios.DeleteAllScenarios
+    Event type 163 of 207: com.apama.scenarios.DeleteScenariosByUser
+    Event type 164 of 207: com.apama.scenarios.SubscribeDeleteScenariosToContext
+    Event type 165 of 207: com.apama.scenarios.UnsubscribeDeleteScenariosToContext
+    Event type 166 of 207: com.apama.statusreport.Status
+    Event type 167 of 207: com.apama.statusreport.StatusError
+    Event type 168 of 207: com.apama.statusreport.SubscribeStatus
+    Event type 169 of 207: com.apama.statusreport.SubscribeStatusToContext
+    Event type 170 of 207: com.apama.statusreport.UnsubscribeStatus
+    Event type 171 of 207: com.apama.statusreport.UnsubscribeStatusToContext
+    Event type 172 of 207: com.apamax.ericsson.Alert
+    Event type 173 of 207: com.apamax.ericsson.Area
+    Event type 174 of 207: com.apamax.ericsson.AvgCheck
+    Event type 175 of 207: com.apamax.ericsson.CallForwardingChange
+    Event type 176 of 207: com.apamax.ericsson.CallPlaced
+    Event type 177 of 207: com.apamax.ericsson.ChangeThresholdAbsolute
+    Event type 178 of 207: com.apamax.ericsson.ChangeTreshholdPercentage
+    Event type 179 of 207: com.apamax.ericsson.ConfigChange
+    Event type 180 of 207: com.apamax.ericsson.ConfigDelta
+    Event type 181 of 207: com.apamax.ericsson.Configuration
+    Event type 182 of 207: com.apamax.ericsson.ContentAccessed
+    Event type 183 of 207: com.apamax.ericsson.CustomerInfo
+    Event type 184 of 207: com.apamax.ericsson.DataConsumed
+    Event type 185 of 207: com.apamax.ericsson.DeviceStartup
+    Event type 186 of 207: com.apamax.ericsson.EnteredArea
+    Event type 187 of 207: com.apamax.ericsson.LeftArea
+    Event type 188 of 207: com.apamax.ericsson.LocationUpdate
+    Event type 189 of 207: com.apamax.ericsson.MsisdnInfo
+    Event type 190 of 207: com.apamax.ericsson.NewAnimator
+    Event type 191 of 207: com.apamax.ericsson.NewCustomer
+    Event type 192 of 207: com.apamax.ericsson.NewPosition
+    Event type 193 of 207: com.apamax.ericsson.PositionUpdateRequest
+    Event type 194 of 207: com.apamax.ericsson.RefillPrepaid
+    Event type 195 of 207: com.apamax.ericsson.RegisterContext
+    Event type 196 of 207: com.apamax.ericsson.RestoreMap
+    Event type 197 of 207: com.apamax.ericsson.RoamingUpdate
+    Event type 198 of 207: com.apamax.ericsson.SaveAreaRectangle
+    Event type 199 of 207: com.apamax.ericsson.SendPlanProposal
+    Event type 200 of 207: com.apamax.ericsson.SendVoucher
+    Event type 201 of 207: com.apamax.ericsson.SmallRefillData
+    Event type 202 of 207: com.apamax.ericsson.SpendWindow
+    Event type 203 of 207: com.apamax.ericsson.StCheck
+    Event type 204 of 207: com.apamax.ericsson.SupplementaryService
+    Event type 205 of 207: com.apamax.ericsson.SwitchHandset
+    Event type 206 of 207: com.apamax.ericsson.TextSent
+    Event type 207 of 207: com.apamax.ericsson.UpdateCustomerImei
+* Number of timers: 1
+    Timer 1 of 1: wait
+* Number of aggregate functions: 1
+    Aggregate function 1 of 1: com.apama.ericsson.frequencyChange
+Remote correlator info dump (end)
+
+
+Remote correlator status dump (start)
+* Uptime(ms):                  857662738
+* Number of contexts:          3
+* Number of monitors:          12
+* Number of sub-monitors:      25
+* Number of java applications: 0
+* Number of listeners:         219
+* Number of sub-listeners:     219
+* Number of event types:       207
+* Events on input queue:       0
+* Events received:             171562
+* Events processed:            857980
+* Events on internal queue:    0
+* Events routed internally:    343294
+* Number of consumers:         2
+* Events on output queue:      0
+* Output events created:       171603
+* Output events sent:          171558
+Remote correlator status dump (end)
+
+Disconnecting...
+Disconnected.
+Done.

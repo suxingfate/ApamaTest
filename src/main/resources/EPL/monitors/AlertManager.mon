@@ -1,0 +1,27 @@
+//*****************************************************************************
+// Title:         AlertManager
+// Description:   AlertManager description
+// Dependencies:  None
+// Author:        dmartin
+//
+//*****************************************************************************
+
+package pers.danisan00.apama.monitors;
+
+using pers.danisan00.apama.eventdefinitions.Alert;
+
+monitor AlertManager {
+	
+	action onload {
+		print "Initializing AlertManager...";
+	
+		Alert alert;
+	
+		on all Alert(): alert {
+			emit alert to "pers.danisan00.apama.channels.AlertChannel";
+		}
+		
+		print "AlertManager initialized.";
+	}
+	
+}

@@ -1,0 +1,113 @@
+2014-08-05 18:57:59,636 [main]  WARN [com.apama.engine.EngineManagementFactory] EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see previous errors. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:57:59,637 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connect() - Failed to create EngineManagement interface.
+2014-08-05 18:57:59,638 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] com.apama.EngineException: EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see wrapped Exception. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:57:59,639 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connectNow() - Failed to connect. Re-throwing exception.
+2014-08-05 18:57:59,667 [main]  INFO [pers.danisan00.apama.EventEngine] MyLocker is created with poolsize=1
+2014-08-05 18:58:00,671 [main]  WARN [com.apama.engine.EngineManagementFactory] EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see previous errors. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:58:00,671 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connect() - Failed to create EngineManagement interface.
+2014-08-05 18:58:00,672 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] com.apama.EngineException: EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see wrapped Exception. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:58:00,673 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connectNow() - Failed to connect. Re-throwing exception.
+2014-08-05 18:58:01,717 [main]  WARN [com.apama.engine.EngineManagementFactory] EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see previous errors. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:58:01,717 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connect() - Failed to create EngineManagement interface.
+2014-08-05 18:58:01,717 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] com.apama.EngineException: EngineManagementFactory.connectToEngineViaTCP() - Failed to create an instance of CorrelatorManagement_TCP - see wrapped Exception. Root apama exception: com.apama.message.MessagingException: Connection refused: connect
+2014-08-05 18:58:01,722 [main]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.connectNow() - Failed to connect. Re-throwing exception.
+2014-08-05 18:58:11,470 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:11,471 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file eventdefinitions/SensorMonitorEvents.mon...
+2014-08-05 18:58:11,473 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:11,489 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file eventdefinitions/AlertEvents.mon...
+2014-08-05 18:58:11,491 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:11,496 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file monitors/AlertManager.mon...
+2014-08-05 18:58:11,498 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:11,508 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file monitors/VSensorMonitor.mon...
+2014-08-05 18:58:11,511 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:11,523 [main]  WARN [com.apama.engine.beans.EngineClientBean] EngineClientBean.injectMonitorScript() - Caught an EngineException while injecting MonitorScript into engine.
+2014-08-05 18:58:11,532 [main]  INFO [pers.danisan00.apama.EventEngine] MyLocker is created with poolsize=1
+2014-08-05 18:58:11,588 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:11,624 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:11,625 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,625 [Thread-3]  INFO [pers.danisan00.apama.ApamaClient] Attaching output event listener...
+2014-08-05 18:58:11,635 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT0",100.0,100.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,643 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,643 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT1",101.0,101.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,646 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,647 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT2",102.0,102.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,648 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,649 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT3",103.0,103.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,651 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,651 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT4",104.0,104.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,656 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,656 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT5",105.0,105.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,660 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,661 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT6",106.0,106.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,664 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,665 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT7",107.0,107.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,667 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,668 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT8",108.0,108.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,672 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:11,672 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT9",109.0,109.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:11,718 [Thread-3]  INFO [pers.danisan00.apama.ApamaClient] Output event listener attached.
+2014-08-05 18:58:18,650 [Thread-2]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.initShutdownHook() - Failed to register ShutdownHook. (reflection - InvocationTargetException)
+2014-08-05 18:58:18,650 [Thread-2]  WARN [com.apama.engine.beans.AbstractEngineClientBean] AbstractEngineClientBean.initShutdownHook() - InvocationTargetException was caused by:Shutdown in progress
+2014-08-05 18:58:36,619 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:36,620 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file eventdefinitions/SensorMonitorEvents.mon...
+2014-08-05 18:58:36,623 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:36,644 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file eventdefinitions/AlertEvents.mon...
+2014-08-05 18:58:36,647 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:36,652 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file monitors/AlertManager.mon...
+2014-08-05 18:58:36,654 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:36,663 [main]  INFO [pers.danisan00.apama.ApamaClient] Injecting EPL file monitors/VSensorMonitor.mon...
+2014-08-05 18:58:36,666 [main]  INFO [pers.danisan00.apama.ApamaClient] EPL file injected.
+2014-08-05 18:58:36,676 [main]  WARN [com.apama.engine.beans.EngineClientBean] EngineClientBean.injectMonitorScript() - Caught an EngineException while injecting MonitorScript into engine.
+2014-08-05 18:58:36,686 [main]  INFO [pers.danisan00.apama.EventEngine] MyLocker is created with poolsize=1
+2014-08-05 18:58:36,729 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:36,769 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is connected.
+2014-08-05 18:58:36,770 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,770 [Thread-3]  INFO [pers.danisan00.apama.ApamaClient] Attaching output event listener...
+2014-08-05 18:58:36,782 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT0",100.0,100.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,791 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,792 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT1",101.0,101.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,794 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,794 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT2",102.0,102.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,796 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,797 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT3",103.0,103.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,798 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,799 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT4",104.0,104.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,800 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,801 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT5",105.0,105.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,802 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,804 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT6",106.0,106.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,807 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,808 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT7",107.0,107.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,810 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,810 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT8",108.0,108.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,812 [main]  INFO [pers.danisan00.apama.ApamaClient] Sending Sensor event...
+2014-08-05 18:58:36,813 [main]  INFO [pers.danisan00.apama.ApamaClient] Event sent: pers.danisan00.apama.eventdefinitions.NewSensor("ATT9",109.0,109.0) of type pers.danisan00.apama.eventdefinitions.NewSensor[sensorId, meanTemperature, meanPressure].
+2014-08-05 18:58:36,854 [Thread-3]  INFO [pers.danisan00.apama.ApamaClient] Output event listener attached.
+2014-08-05 18:59:06,818 [main]  INFO [pers.danisan00.apama.EventEngine] All sending threads are stoped
+2014-08-05 18:59:06,819 [main]  INFO [pers.danisan00.apama.ApamaClient] Detaching output event listener...
+2014-08-05 18:59:06,819 [Thread-2]  INFO [pers.danisan00.apama.EventEngine] finnaly closed, and count is:32251
+2014-08-05 18:59:06,822 [Thread-2]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is disconnected.
+2014-08-05 18:59:06,825 [main]  INFO [pers.danisan00.apama.ApamaClient] Output event listener detached.
+2014-08-05 18:59:06,825 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is disconnected.
+2014-08-05 18:59:07,128 [main]  INFO [pers.danisan00.apama.ApamaClient] Remote correlator status dump (start)
+2014-08-05 18:59:07,130 [main]  INFO [pers.danisan00.apama.ApamaClient] * Uptime(ms):                  42901
+* Number of contexts:          1
+* Number of monitors:          1
+* Number of sub-monitors:      1
+* Number of java applications: 0
+* Number of listeners:         1
+* Number of sub-listeners:     1
+* Number of event types:       4
+* Events on input queue:       0
+* Events received:             2580090
+* Events processed:            2580090
+* Events on internal queue:    0
+* Events routed internally:    0
+* Number of consumers:         0
+* Events on output queue:      0
+* Output events created:       0
+* Output events sent:          0
+2014-08-05 18:59:07,130 [main]  INFO [pers.danisan00.apama.ApamaClient] Remote correlator status dump (end)
+2014-08-05 18:59:07,130 [main]  INFO [pers.danisan00.apama.ApamaClient] Deleting monitor pers.danisan00.apama.monitors.SensorMonitor...
+2014-08-05 18:59:07,132 [main] ERROR [com.apama.engine.beans.EngineClientBean] EngineClientBean.deleteName() - Caught an EngineException while deleting a Name from the engine.
+2014-08-05 18:59:07,134 [main]  INFO [pers.danisan00.apama.ApamaClient] ApamaClient is disconnected.
